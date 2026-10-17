@@ -1,166 +1,169 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taller PHP</title>
-    <link rel="stylesheet" href="css/consolas.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/consolas.css" />
+  </head>
+  <body>
     <nav class="nav-taller">
-        <a href="#acronimo" class="nav-acronimo">Acrónimo</a>
-        <a href="#fibonacci" class="nav-fibonacci">Fibonacci</a>
-        <a href="#estadistica" class="nav-estadistica">Estadística</a>
-        <a href="#conjuntos" class="nav-conjuntos">Conjuntos</a>
-        <a href="#binario" class="nav-binario">Binario</a>
-        <a href="#arbol" class="nav-arbol">Árbol</a>
-        <a href="#calculadora" class="nav-calculadora">Calculadora</a>
+      <a href="acronimo.php" class="nav-acronimo">Acrónimo</a>
+      <a href="fibonacci.php" class="nav-fibonacci">Fibonacci</a>
+      <a href="estadistica.php" class="nav-estadistica">Estadística</a>
+      <a href="conjuntos.php" class="nav-conjuntos">Conjuntos</a>
+      <a href="binario.php" class="nav-binario">Binario</a>
+      <a href="arbol.php" class="nav-arbol">Árbol</a>
+      <a href="calculadora.php" class="nav-calculadora">Calculadora</a>
     </nav>
 
     <main class="pantalla-taller">
-        <div class="mosaico-taller">
+      <div class="mosaico-taller">
+        <article class="franja franja-acronimo" id="acronimo">
+          <div class="franja-fondo-consola"></div>
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen" aria-label="Acrónimo">
+              <img src="resources/acronimo.jpg" alt="Acrónimo" />
+            </div>
+            <h3 class="franja-nombre">Acrónimo</h3>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Texto</span>
+            <h3>Acrónimo</h3>
+            <p class="franja-control">
+              Frase: <strong>Portable Network Graphics</strong>
+            </p>
+            <div class="franja-acciones">
+              <a href="acronimo.php" class="taller-btn">Abrir actividad</a>
+            </div>
+          </div>
+        </article>
 
-            <article class="franja franja-acronimo" id="acronimo">
-                <div class="franja-fondo-consola"></div>
-                <div class="franja-fondo-marca"></div>
-                <div class="franja-colapsada">
-                    <h3 class="franja-nombre">Acrónimo</h3>
-                </div>
-                <div class="franja-expandida">
-                    <span class="marca">Texto</span>
-                    <h3>Acrónimo</h3>
-                    <p class="franja-control">Frase: <strong>Portable Network Graphics</strong></p>
-                    <p class="franja-subtitulo">Ejemplos</p>
-                    <div class="juegos-destacados">
-                        <div class="juego-bloque jb-1 jb-foto"><span>PNG</span></div>
-                        <div class="juego-bloque jb-2 jb-foto"><span>ASAP</span></div>
-                        <div class="juego-bloque jb-3 jb-foto"><span>LCD</span></div>
-                        <div class="juego-bloque jb-4 jb-foto"><span>TGIF</span></div>
-                    </div>
-                </div>
-            </article>
+        <article class="franja franja-fibonacci" id="fibonacci">
+          <div class="franja-fondo-consola"></div>
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen" aria-label="Fibonacci">
+              <img src="resources/fibonacci.jpg" alt="Fibonacci" />
+            </div>
+            <h3 class="franja-nombre">Fibonacci</h3>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Sucesión</span>
+            <h3>Fibonacci / Factorial</h3>
+            <p class="franja-control">
+              Operación: <strong>Fibonacci o factorial</strong>
+            </p>
+            <div class="franja-acciones">
+              <a href="fibonacci.php" class="taller-btn">Abrir actividad</a>
+            </div>
+          </div>
+        </article>
 
-            <article class="franja franja-fibonacci" id="fibonacci">
-                <div class="franja-fondo-consola"></div>
-                <div class="franja-fondo-marca"></div>
-                <div class="franja-colapsada">
-                    <h3 class="franja-nombre">Fibonacci</h3>
-                </div>
-                <div class="franja-expandida">
-                    <span class="marca">Sucesión</span>
-                    <h3>Fibonacci / Factorial</h3>
-                    <p class="franja-control">Operación: <strong>Fibonacci o factorial</strong></p>
-                    <p class="franja-subtitulo">Entradas</p>
-                    <div class="juegos-destacados">
-                        <div class="juego-bloque jb-1 jb-foto"><span>8</span></div>
-                        <div class="juego-bloque jb-2 jb-foto"><span>5</span></div>
-                        <div class="juego-bloque jb-3 jb-foto"><span>Fibo</span></div>
-                        <div class="juego-bloque jb-4 jb-foto"><span>Fact</span></div>
-                    </div>
-                </div>
-            </article>
+        <article class="franja franja-estadistica" id="estadistica">
+          <div class="franja-fondo-consola"></div>
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen" aria-label="Estadística">
+              <img src="resources/estadistica.jpg" alt="Estadística" />
+            </div>
+            <h3 class="franja-nombre">Estadística</h3>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Datos</span>
+            <h3>Promedio · Media · Moda</h3>
+            <p class="franja-control">Serie: <strong>2, 4, 4, 7, 9</strong></p>
+            <div class="franja-acciones">
+              <a href="estadistica.php" class="taller-btn">Abrir actividad</a>
+            </div>
+          </div>
+        </article>
 
-            <article class="franja franja-estadistica" id="estadistica">
-                <div class="franja-fondo-consola"></div>
-                <div class="franja-fondo-marca"></div>
-                <div class="franja-colapsada">
-                    <h3 class="franja-nombre">Estadística</h3>
-                </div>
-                <div class="franja-expandida">
-                    <span class="marca">Datos</span>
-                    <h3>Promedio · Media · Moda</h3>
-                    <p class="franja-control">Serie: <strong>2, 4, 4, 7, 9</strong></p>
-                    <p class="franja-subtitulo">Medidas</p>
-                    <div class="juegos-destacados">
-                        <div class="juego-bloque jb-1 jb-foto"><span>Media</span></div>
-                        <div class="juego-bloque jb-2 jb-foto"><span>Moda</span></div>
-                        <div class="juego-bloque jb-3 jb-foto"><span>Prom</span></div>
-                        <div class="juego-bloque jb-4 jb-foto"><span>Serie</span></div>
-                    </div>
-                </div>
-            </article>
+        <article class="franja franja-conjuntos" id="conjuntos">
+          <div class="franja-fondo-consola"></div>
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen" aria-label="Conjuntos">
+              <img src="resources/conjuntos.jpg" alt="Conjuntos" />
+            </div>
+            <h3 class="franja-nombre">Conjuntos</h3>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Matemáticas</span>
+            <h3>Unión · Intersección</h3>
+            <p class="franja-control">
+              A: <strong>1,2,3,4</strong> · B: <strong>3,4,5,6</strong>
+            </p>
+            <div class="franja-acciones">
+              <a href="conjuntos.php" class="taller-btn">Abrir actividad</a>
+            </div>
+          </div>
+        </article>
 
-            <article class="franja franja-conjuntos" id="conjuntos">
-                <div class="franja-fondo-consola"></div>
-                <div class="franja-fondo-marca"></div>
-                <div class="franja-colapsada">
-                    <h3 class="franja-nombre">Conjuntos</h3>
-                </div>
-                <div class="franja-expandida">
-                    <span class="marca">Matemáticas</span>
-                    <h3>Unión · Intersección</h3>
-                    <p class="franja-control">A: <strong>1,2,3,4</strong> · B: <strong>3,4,5,6</strong></p>
-                    <p class="franja-subtitulo">Operaciones</p>
-                    <div class="juegos-destacados">
-                        <div class="juego-bloque jb-1 jb-foto"><span>U</span></div>
-                        <div class="juego-bloque jb-2 jb-foto"><span>∩</span></div>
-                        <div class="juego-bloque jb-3 jb-foto"><span>A-B</span></div>
-                        <div class="juego-bloque jb-4 jb-foto"><span>B-A</span></div>
-                    </div>
-                </div>
-            </article>
+        <article class="franja franja-binario" id="binario">
+          <div class="franja-fondo-consola"></div>
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen" aria-label="Binario">
+              <img src="resources/binario.jpg" alt="Binario" />
+            </div>
+            <h3 class="franja-nombre">Binario</h3>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Conversión</span>
+            <h3>Decimal a Binario</h3>
+            <p class="franja-control">Número: <strong>25</strong></p>
+            <div class="franja-acciones">
+              <a href="binario.php" class="taller-btn">Abrir actividad</a>
+            </div>
+          </div>
+        </article>
 
-            <article class="franja franja-binario" id="binario">
-                <div class="franja-fondo-consola"></div>
-                <div class="franja-fondo-marca"></div>
-                <div class="franja-colapsada">
-                    <h3 class="franja-nombre">Binario</h3>
-                </div>
-                <div class="franja-expandida">
-                    <span class="marca">Conversión</span>
-                    <h3>Decimal a Binario</h3>
-                    <p class="franja-control">Número: <strong>25</strong></p>
-                    <p class="franja-subtitulo">Resultado</p>
-                    <div class="juegos-destacados">
-                        <div class="juego-bloque jb-1 jb-foto"><span>11001</span></div>
-                        <div class="juego-bloque jb-2 jb-foto"><span>101</span></div>
-                        <div class="juego-bloque jb-3 jb-foto"><span>0110</span></div>
-                        <div class="juego-bloque jb-4 jb-foto"><span>0101</span></div>
-                    </div>
-                </div>
-            </article>
+        <article class="franja franja-arbol" id="arbol">
+          <div class="franja-fondo-consola"></div>
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen" aria-label="Árbol">
+              <img src="resources/arbol.jpg" alt="Árbol" />
+            </div>
+            <h3 class="franja-nombre">Árbol</h3>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Estructuras</span>
+            <h3>Árbol Binario</h3>
+            <p class="franja-control">
+              Recorridos: <strong>Preorden e Inorden</strong>
+            </p>
+            <div class="franja-acciones">
+              <a href="arbol.php" class="taller-btn">Abrir actividad</a>
+            </div>
+          </div>
+        </article>
 
-            <article class="franja franja-arbol" id="arbol">
-                <div class="franja-fondo-consola"></div>
-                <div class="franja-fondo-marca"></div>
-                <div class="franja-colapsada">
-                    <h3 class="franja-nombre">Árbol</h3>
-                </div>
-                <div class="franja-expandida">
-                    <span class="marca">Estructuras</span>
-                    <h3>Árbol Binario</h3>
-                    <p class="franja-control">Recorridos: <strong>Preorden e Inorden</strong></p>
-                    <p class="franja-subtitulo">Nodos</p>
-                    <div class="juegos-destacados">
-                        <div class="juego-bloque jb-1 jb-foto"><span>A</span></div>
-                        <div class="juego-bloque jb-2 jb-foto"><span>B</span></div>
-                        <div class="juego-bloque jb-3 jb-foto"><span>C</span></div>
-                        <div class="juego-bloque jb-4 jb-foto"><span>D</span></div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="franja franja-calculadora" id="calculadora">
-                <div class="franja-fondo-consola"></div>
-                <div class="franja-fondo-marca"></div>
-                <div class="franja-colapsada">
-                    <h3 class="franja-nombre">Calculadora</h3>
-                </div>
-                <div class="franja-expandida">
-                    <span class="marca">Operaciones</span>
-                    <h3>Calculadora</h3>
-                    <p class="franja-control">Operaciones: <strong>Suma, resta, división, porcentaje</strong></p>
-                    <p class="franja-subtitulo">Historial</p>
-                    <div class="juegos-destacados">
-                        <div class="juego-bloque jb-1 jb-foto"><span>+</span></div>
-                        <div class="juego-bloque jb-2 jb-foto"><span>-</span></div>
-                        <div class="juego-bloque jb-3 jb-foto"><span>÷</span></div>
-                        <div class="juego-bloque jb-4 jb-foto"><span>%</span></div>
-                    </div>
-                </div>
-            </article>
-
-        </div>
+        <article class="franja franja-calculadora" id="calculadora">
+          <div class="franja-fondo-consola"></div>
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen" aria-label="Calculadora">
+              <img src="resources/calculadora.jpg" alt="Calculadora" />
+            </div>
+            <h3 class="franja-nombre">Calculadora</h3>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Operaciones</span>
+            <h3>Calculadora</h3>
+            <p class="franja-control">
+              Operaciones: <strong>Suma, resta, división, porcentaje</strong>
+            </p>
+            <div class="franja-acciones">
+              <a href="calculadora.php" class="taller-btn">Abrir actividad</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
-</body>
+  </body>
 </html>
+s

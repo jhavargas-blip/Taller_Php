@@ -1,66 +1,3 @@
-﻿/* Variables globales de color y estilo reutilizadas en toda la página. */
-:root {
-  --fondo: #151a2e;
-  --superficie: #1e2440;
-  --borde: #3e4874;
-  --borde-suave: rgba(255, 255, 255, 0.07);
-  --borde-brillo: rgba(255, 255, 255, 0.14);
-  --texto: #eef0f8;
-  --texto-tenue: rgba(238, 240, 248, 0.65);
-  --acento: #7c5cff;
-  --acento-claro: #a78bff;
-  --ps5: #2e6ff2;
-  --xbox: #3fbf5a;
-  --xbox-lima: #8fd400;
-  --switch: #e63946;
-  --steam: #4a9fd8;
-  --radio: 14px;
-}
-
-/* Reinicio básico para mantener medidas consistentes entre navegadores. */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-/* Estilos generales de la página: tipografía, fondo y color del texto. */
-body {
-  height: 100%;
-}
-
-body {
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--fondo);
-  background-image:
-    radial-gradient(
-      900px 500px at 15% -5%,
-      rgba(124, 92, 255, 0.13),
-      transparent 70%
-    ),
-    radial-gradient(
-      800px 500px at 90% 0%,
-      rgba(46, 111, 242, 0.11),
-      transparent 70%
-    );
-  background-attachment: fixed;
-  color: var(--texto);
-  line-height: 1.6;
-  overflow: hidden;
-}
-
-a {
-  color: inherit;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Rajdhani", "Segoe UI", sans-serif;
-  letter-spacing: 0.5px;
-}
-
 /* Contenedor principal que ocupa toda la ventana del navegador. */
 .pantalla-taller {
   display: flex;
@@ -100,12 +37,7 @@ h3 {
 /* Solapamiento leve con borde recto para mantener separadas las franjas. */
 .franja:not(:first-child) {
   margin-left: -8px;
-  clip-path: polygon(
-    8px 0,
-    100% 0,
-    100% 100%,
-    8px 100%
-  );
+  clip-path: polygon(8px 0, 100% 0, 100% 100%, 8px 100%);
 }
 
 /* Orden de superposición: la primera franja queda por encima de las siguientes. */
@@ -221,6 +153,36 @@ h3 {
   text-align: center;
   opacity: 1;
   transition: opacity 0.35s ease;
+}
+
+/* Espacio central para colocar una imagen o logo en cada franja. */
+.franja-imagen {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: clamp(72px, 10vw, 160px);
+  max-width: 80%;
+  aspect-ratio: 1.5;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.015);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(0.55rem, 1vw, 0.78rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Las imágenes añadidas al espacio se adaptan sin deformarse. */
+.franja-imagen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Oculta el título compacto al expandir el panel con el cursor. */
@@ -373,165 +335,61 @@ h3 {
 .franja-control {
   font-size: 0.88rem;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 28px;
+  margin-bottom: 8px;
 }
 
-.franja-subtitulo {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
-  margin-bottom: 14px;
+/* Enlace de acción de cada actividad, con acento tomado del panel. */
+.franja-acciones {
+  margin-top: 20px;
 }
 
-/* Distribución de las tarjetas de ejemplo dentro de cada panel expandido. */
-.juegos-destacados {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 11px;
-  max-width: 500px;
-}
-
-/* Apariencia común de las tarjetas decorativas de ejemplo. */
-.juego-bloque {
-  position: relative;
-  width: 112px;
-  aspect-ratio: 3 / 4;
-  display: flex;
-  align-items: flex-end;
-  border-radius: 8px;
-  padding: 9px 9px 8px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
-}
-
-/* Realce de una tarjeta cuando se coloca el cursor sobre ella. */
-.juego-bloque:hover {
-  transform: translateY(-5px);
-  border-color: var(--color-marca, rgba(255, 255, 255, 0.6));
-  box-shadow:
-    0 12px 24px rgba(0, 0, 0, 0.5),
-    0 0 18px -2px var(--color-marca, transparent);
-}
-
-.juego-bloque span {
-  position: relative;
-  z-index: 3;
-  width: 100%;
-  font-size: 0.72rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.2px;
+.taller-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 999px;
+  background: rgba(8, 10, 20, 0.35);
   color: #fff;
-  text-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.95),
-    0 2px 8px rgba(0, 0, 0, 0.8);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
-.juego-bloque::before,
-.juego-bloque::after {
-  content: "";
-  position: absolute;
+.taller-btn::after {
+  content: "→";
+  margin-left: 10px;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
 }
 
-/* Cuatro variantes gráficas para dar textura y color a las tarjetas. */
-.jb-1 {
-  --borde-bloque: rgba(255, 140, 66, 0.7);
-  background: linear-gradient(155deg, #b6551f, #401708);
-}
-
-.jb-1::before {
-  inset: 0;
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.08) 0 10px,
-    transparent 10px 26px
-  );
-}
-
-.jb-1::after {
-  left: -20%;
-  right: -20%;
-  bottom: -30%;
-  height: 60%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.18),
-    transparent 70%
-  );
-}
-
-.jb-2 {
-  --borde-bloque: rgba(184, 108, 255, 0.7);
-  background: linear-gradient(155deg, #7c3fc9, #2a1345);
-}
-
-.jb-2::before {
-  top: 14%;
-  right: -18%;
-  width: 70%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.16);
-  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.05);
-}
-
-.jb-2::after {
-  inset: 0;
-  background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.55));
-}
-
-.jb-3 {
-  --borde-bloque: rgba(66, 224, 168, 0.7);
-  background: linear-gradient(155deg, #1a8f63, #0a3324);
-}
-
-.jb-3::before {
-  inset: 0;
-  background-image:
-    linear-gradient(0deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
-  background-size: 18px 18px;
-}
-
-.jb-3::after {
-  left: 0;
-  right: 0;
-  bottom: -10%;
-  height: 55%;
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.6));
-}
-
-.jb-4 {
-  --borde-bloque: rgba(255, 209, 66, 0.7);
-  background: linear-gradient(155deg, #c98a1f, #402c08);
-}
-
-.jb-4::before {
-  top: -30%;
-  left: 30%;
-  width: 3px;
-  height: 160%;
-  background: rgba(255, 255, 255, 0.35);
-  transform: rotate(20deg);
+.taller-btn:hover,
+.taller-btn:focus-visible {
+  background: var(--color-marca, rgba(255, 255, 255, 0.2));
+  border-color: #09ff00;
   box-shadow:
-    -24px 10px 0 -1px rgba(255, 255, 255, 0.12),
-    24px -10px 0 -1px rgba(255, 255, 255, 0.12);
+    0 8px 22px rgba(208, 1, 255, 0.3),
+    0 0 18px var(--glow-marca, transparent);
+  transform: translateY(-2px);
 }
 
-.jb-4::after {
-  inset: 0;
-  background: radial-gradient(
-    circle at 30% 100%,
-    rgba(255, 255, 255, 0.2),
-    transparent 60%
-  );
+.taller-btn:hover::after,
+.taller-btn:focus-visible::after {
+  transform: translateX(3px);
+}
+
+.taller-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
 }
 
 /* Color de respaldo de las franjas, visible mientras cargan los gradientes. */
@@ -589,7 +447,6 @@ h3 {
     background 0.3s ease,
     text-shadow 0.3s ease;
 }
-
 /* Línea de color que se anima debajo del enlace activo por hover o teclado. */
 .nav-taller a::after {
   content: "";
@@ -605,13 +462,15 @@ h3 {
   box-shadow:
     0 0 8px var(--neon),
     0 0 18px var(--neon);
-  transition: transform 0.3s ease, opacity 0.25s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.25s ease;
 }
 
 /* Cambio de color y brillo al interactuar con los enlaces de navegación. */
 .nav-taller a:hover,
 .nav-taller a:focus-visible {
-  color: #fff;
+  color: #ffffff;
   background: linear-gradient(180deg, transparent 30%, var(--neon-suave) 100%);
   text-shadow:
     0 0 10px var(--neon),
@@ -652,25 +511,4 @@ h3 {
 .nav-calculadora {
   --neon: #ffc857;
   --neon-suave: rgba(255, 200, 87, 0.2);
-}
-
-/* Evita que el enlace ancla de la URL expanda o altere una franja. */
-.franja:target {
-  flex-grow: 1;
-  filter: none;
-  z-index: 8;
-}
-
-.franja:target .franja-colapsada {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.franja:target .franja-expandida {
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-.mosaico-taller:hover .franja:target:not(:hover) {
-  flex-grow: 1;
 }

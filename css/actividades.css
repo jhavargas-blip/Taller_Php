@@ -1,0 +1,329 @@
+/* Presentación común de las páginas de cada actividad. */
+body.actividad-pagina {
+  min-height: 100vh;
+  height: auto;
+  overflow: auto;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      color-mix(in srgb, var(--actividad-acento) 18%, transparent),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 85%,
+      color-mix(in srgb, var(--actividad-acento) 12%, transparent),
+      transparent 35%
+    ),
+    var(--fondo);
+}
+
+.actividad-contenido {
+  width: min(100%, 720px);
+  padding: clamp(28px, 6vw, 56px);
+  border: 1px solid color-mix(in srgb, var(--actividad-acento) 28%, transparent);
+  border-radius: 24px;
+  background: rgba(15, 19, 39, 0.86);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(12px);
+}
+
+.actividad-etiqueta {
+  margin-bottom: 10px;
+  color: var(--actividad-acento, #a78bff);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.actividad-contenido h1 {
+  margin-bottom: 14px;
+  color: #fff;
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.1;
+}
+
+.actividad-descripcion {
+  max-width: 58ch;
+  color: rgba(238, 240, 248, 0.78);
+}
+
+.actividad-aviso {
+  margin-top: 26px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--actividad-acento, #a78bff);
+  border-radius: 0 12px 12px 0;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(238, 240, 248, 0.86);
+}
+
+.acronimo-formulario {
+  display: grid;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.acronimo-formulario label,
+.acronimo-resultado h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.acronimo-formulario textarea,
+.acronimo-formulario input,
+.acronimo-formulario select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  font: inherit;
+}
+
+.acronimo-formulario textarea {
+  min-height: 104px;
+  resize: vertical;
+}
+
+.acronimo-formulario select option {
+  background: var(--superficie);
+  color: var(--texto);
+}
+
+.acronimo-formulario textarea::placeholder,
+.acronimo-formulario input::placeholder {
+  color: rgba(238, 240, 248, 0.5);
+}
+
+.acronimo-formulario textarea:focus-visible,
+.acronimo-formulario input:focus-visible,
+.acronimo-formulario select:focus-visible {
+  outline: 3px solid var(--actividad-acento, #a78bff);
+  outline-offset: 2px;
+}
+
+.acronimo-convertir {
+  justify-self: start;
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--actividad-acento, #7c5cff);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    filter 0.2s ease,
+    transform 0.2s ease;
+}
+
+.acronimo-convertir:hover,
+.acronimo-convertir:focus-visible {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+
+.acronimo-convertir:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.acronimo-resultado {
+  margin-top: 28px;
+}
+
+.acronimo-resultado h2 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.acronimo-resultado output {
+  display: block;
+  overflow-wrap: anywhere;
+  color: var(--actividad-acento, #a78bff);
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.acronimo-mensaje {
+  min-height: 1.5em;
+  margin-top: 6px;
+  color: #ffb4ab;
+}
+
+.actividad-error {
+  margin-top: 12px;
+  color: #ffb4ab;
+}
+
+.actividad-ayuda {
+  color: rgba(238, 240, 248, 0.72);
+  font-size: 0.9rem;
+}
+
+.arbol-salida {
+  overflow-x: auto;
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.arbol-salida ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.arbol-salida > ul {
+  min-width: max-content;
+}
+
+.arbol-salida li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.arbol-salida li > ul {
+  position: relative;
+  padding-top: 12px;
+}
+
+.arbol-salida li > ul::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 12px;
+  border-left: 1px solid var(--actividad-acento);
+  content: "";
+}
+
+.nodo-arbol {
+  display: inline-grid;
+  min-width: 38px;
+  min-height: 38px;
+  place-items: center;
+  padding: 4px 10px;
+  border: 1px solid color-mix(in srgb, var(--actividad-acento) 65%, transparent);
+  border-radius: 50%;
+  background: var(--superficie);
+  color: var(--actividad-acento);
+  font-weight: 700;
+}
+
+.recorridos-salida {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+  overflow-wrap: anywhere;
+}
+
+.historial ol {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+  list-style: none;
+}
+
+.historial li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.historial li strong {
+  color: var(--actividad-acento);
+}
+
+.formulario-borrar-historial {
+  margin-top: 14px;
+}
+
+.historial .acronimo-convertir {
+  background: #8b2635;
+}
+
+.actividad-volver {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 28px;
+  padding: 10px 20px;
+  border: 1px solid var(--actividad-acento, #a78bff);
+  border-radius: 999px;
+  background: var(--actividad-acento, #7c5cff);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.actividad-volver::before {
+  content: "←";
+  margin-right: 10px;
+}
+
+.actividad-volver:hover,
+.actividad-volver:focus-visible {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px
+    color-mix(in srgb, var(--actividad-acento, #7c5cff) 45%, transparent);
+}
+
+.actividad-volver:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.actividad-acronimo {
+  --actividad-acento: #9bf00b;
+}
+.actividad-fibonacci {
+  --actividad-acento: #4d95ff;
+}
+.actividad-estadistica {
+  --actividad-acento: #ff4655;
+}
+.actividad-conjuntos {
+  --actividad-acento: #4fc3f7;
+}
+.actividad-binario {
+  --actividad-acento: #ff9f43;
+}
+.actividad-arbol {
+  --actividad-acento: #63d9ff;
+}
+.actividad-calculadora {
+  --actividad-acento: #ffc857;
+}
+
+@media (max-width: 480px) {
+  body.actividad-pagina {
+    padding: 16px;
+  }
+
+  .actividad-contenido {
+    border-radius: 18px;
+  }
+}
