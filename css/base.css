@@ -1,0 +1,64 @@
+:root {
+  --fondo: #151a2e;
+  --superficie: #1e2440;
+  --borde: #3e4874;
+  --borde-suave: rgba(255, 255, 255, 0.07);
+  --borde-brillo: rgba(255, 255, 255, 0.14);
+  --texto: #eef0f8;
+  --texto-tenue: rgba(238, 240, 248, 0.65);
+  --acento: #7c5cff;
+  --acento-claro: #a78bff;
+  --ps5: #2e6ff2;
+  --xbox: #3fbf5a;
+  --xbox-lima: #8fd400;
+  --switch: #e63946;
+  --steam: #4a9fd8;
+  --radio: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+/* Tipografía y colores comunes; cada página define su propia composición. */
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--fondo);
+  background-image:
+    radial-gradient(
+      900px 500px at 15% -5%,
+      rgba(124, 92, 255, 0.13),
+      transparent 70%
+    ),
+    radial-gradient(
+      800px 500px at 90% 0%,
+      rgba(46, 111, 242, 0.11),
+      transparent 70%
+    );
+  background-attachment: fixed;
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Rajdhani", "Segoe UI", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--acento-claro);
+  outline-offset: 3px;
+}
