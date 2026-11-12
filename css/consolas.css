@@ -189,7 +189,9 @@
     transform 0.4s ease 0.15s;
 }
 
-.franja:hover .franja-expandida {
+.franja:hover .franja-expandida,
+.franja-expandida:hover,
+.franja:focus-within .franja-expandida {
   opacity: 1;
   transform: translateY(0);
 }

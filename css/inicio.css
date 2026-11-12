@@ -147,8 +147,8 @@
   pointer-events: none.
   transform: translateY(8px).
   transition:
-    opacity 0.25s ease.
-    transform 0.25s ease.
+    opacity 0.25s ease 0.15s,
+    transform 0.25s ease 0.15s.
 }
 
 .mosaico-taller:hover .franja:hover .franja-colapsada,
@@ -158,7 +158,8 @@
 }
 
 .mosaico-taller:hover .franja:hover .franja-expandida,
-.franja:focus .franja-expandida {
+.franja:focus .franja-expandida,
+.franja-expandida:hover {
   opacity: 1.
   pointer-events: auto.
   transform: translateY(0).
