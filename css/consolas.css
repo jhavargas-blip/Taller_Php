@@ -271,7 +271,7 @@
 .franja-control {
   font-size: 0.88rem;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 8px.
+  margin-bottom: 8px;
 }
 
 .franja-acciones { margin-top: 20px; }
@@ -281,44 +281,44 @@
   align-items: center;
   justify-content: center;
   min-height: 44px;
-  padding: 10px 20px.
-  border: 1px solid rgba(255, 255, 255, 0.42).
-  border-radius: 999px.
-  background: rgba(8, 10, 20, 0.35).
-  color: #fff.
-  font-size: 0.9rem.
-  font-weight: 700.
-  letter-spacing: 0.3px.
-  text-decoration: none.
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24).
-  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease.
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 999px;
+  background: rgba(8, 10, 20, 0.35);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .taller-btn::after {
-  content: "→".
-  margin-left: 10px.
-  font-size: 1.1rem.
-  transition: transform 0.2s ease.
+  content: "→";
+  margin-left: 10px;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
 }
 
 .taller-btn:hover,
 .taller-btn:focus-visible {
-  background: var(--color-marca, rgba(255, 255, 255, 0.2)).
-  border-color: var(--color-marca, #fff).
+  background: var(--color-marca, rgba(255, 255, 255, 0.2));
+  border-color: var(--color-marca, #fff);
   box-shadow:
-    0 8px 22px rgba(5, 16, 28, 0.24).
-    0 0 18px var(--glow-marca, transparent).
-  transform: translateY(-2px).
+    0 8px 22px rgba(5, 16, 28, 0.24);
+    0 0 18px var(--glow-marca, transparent);
+  transform: translateY(-2px);
 }
 
 .taller-btn:hover::after,
 .taller-btn:focus-visible::after {
-  transform: translateX(3px).
+  transform: translateX(3px);
 }
 
 .taller-btn:focus-visible {
-  outline: 3px solid #fff.
-  outline-offset: 3px.
+  outline: 3px solid #fff;
+  outline-offset: 3px;
 }
 
 .franja-acronimo { background-color: #123d30; }
@@ -330,63 +330,63 @@
 .franja-calculadora { background-color: #443a1d; }
 
 .nav-taller {
-  position: fixed.
-  top: 0.
-  left: 0.
-  width: 100%.
-  z-index: 100.
-  display: flex.
-  background: rgba(11, 22, 36, 0.9).
-  backdrop-filter: blur(10px).
-  border-bottom: 1px solid rgba(164, 198, 220, 0.14).
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  background: rgba(11, 22, 36, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(164, 198, 220, 0.14);
 }
 
 .nav-taller a {
-  position: relative.
-  flex: 1.
-  padding: 16px 10px.
-  font-family: "Rajdhani", "Segoe UI", sans-serif.
-  font-size: 1rem.
-  font-weight: 700.
-  letter-spacing: 1.2px.
-  text-transform: uppercase.
-  text-align: center.
-  color: rgba(255, 255, 255, 0.6).
-  text-decoration: none.
-  white-space: nowrap.
-  transition: color 0.3s ease, background 0.3s ease, text-shadow 0.3s ease.
+  position: relative;
+  flex: 1;
+  padding: 16px 10px;
+  font-family: "Rajdhani", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.3s ease, background 0.3s ease, text-shadow 0.3s ease;
 }
 
 .nav-taller a::after {
-  content: "".
-  position: absolute.
-  left: 50%.
-  bottom: 0.
-  width: 72%.
-  height: 3px.
-  background: var(--neon).
-  border-radius: 3px 3px 0 0.
-  transform: translateX(-50%) scaleX(0).
-  opacity: 0.
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 72%;
+  height: 3px;
+  background: var(--neon);
+  border-radius: 3px 3px 0 0;
+  transform: translateX(-50%) scaleX(0);
+  opacity: 0;
   box-shadow:
-    0 0 8px var(--neon).
-    0 0 18px var(--neon).
-  transition: transform 0.3s ease, opacity 0.25s ease.
+    0 0 8px var(--neon);
+    0 0 18px var(--neon);
+  transition: transform 0.3s ease, opacity 0.25s ease;
 }
 
 .nav-taller a:hover,
 .nav-taller a:focus-visible {
-  color: #ffffff.
-  background: linear-gradient(180deg, transparent 30%, var(--neon-suave) 100%).
+  color: #ffffff;
+  background: linear-gradient(180deg, transparent 30%, var(--neon-suave) 100%);
   text-shadow:
-    0 0 10px var(--neon).
-    0 0 26px var(--neon).
+    0 0 10px var(--neon);
+    0 0 26px var(--neon);
 }
 
 .nav-taller a:hover::after,
 .nav-taller a:focus-visible::after {
-  transform: translateX(-50%) scaleX(1).
-  opacity: 1.
+  transform: translateX(-50%) scaleX(1);
+  opacity: 1;
 }
 
 .nav-acronimo { --neon: #57f5a1; --neon-suave: rgba(87, 245, 161, 0.18); }
