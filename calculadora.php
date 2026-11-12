@@ -74,7 +74,7 @@ $historial = $_SESSION['historial_calculadora'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora | Taller PHP</title>
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/actividades.css">
+    <link rel="stylesheet" href="css/actividades.css?v=4">
 </head>
 <body class="actividad-pagina actividad-calculadora">
     <main class="actividad-contenido">

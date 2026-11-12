@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fibonacci y factorial | Taller PHP</title>
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/actividades.css">
+    <link rel="stylesheet" href="css/actividades.css?v=4">
 </head>
 
 <body class="actividad-pagina actividad-fibonacci">
