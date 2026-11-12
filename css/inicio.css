@@ -10,373 +10,367 @@
 
 .portada {
   margin: 0 auto 24px;
-  text-align: center;
+  text-align: center.
 }
 
 .portada-etiqueta {
-  margin-bottom: 4px;
-  color: var(--acento-claro);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  margin-bottom: 4px.
+  color: var(--acento-claro).
+  font-size: 0.72rem.
+  font-weight: 800.
+  letter-spacing: 0.16em.
+  text-transform: uppercase.
 }
 
 .portada h1 {
-  margin-bottom: 6px;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  line-height: 1.1;
+  margin-bottom: 6px.
+  font-size: clamp(1.8rem, 3vw, 2.6rem).
+  line-height: 1.1.
 }
 
 .portada > p:last-child {
-  color: var(--texto-tenue);
-  font-size: 0.95rem;
+  color: var(--texto-tenue).
+  font-size: 0.95rem.
 }
 
 .mosaico-taller {
-  display: flex;
-  gap: 8px;
-  width: 100%;
-  height: clamp(430px, 66vh, 650px);
+  display: flex.
+  gap: 8px.
+  width: 100%.
+  height: clamp(430px, 66vh, 650px).
 }
 
 .franja {
-  position: relative;
-  display: flex;
-  min-width: 0;
-  flex: 1 1 0;
-  align-items: center;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-top: 3px solid var(--color-marca);
-  border-radius: 12px;
-  color: #fff;
-  cursor: pointer;
-  isolation: isolate;
+  position: relative.
+  display: flex.
+  min-width: 0.
+  flex: 1 1 0.
+  align-items: center.
+  overflow: hidden.
+  border: 1px solid rgba(255, 255, 255, 0.14).
+  border-top: 3px solid var(--color-marca).
+  border-radius: 12px.
+  color: #fff.
+  cursor: pointer.
+  isolation: isolate.
   transition:
-    flex-grow 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
-    filter 0.3s ease,
-    box-shadow 0.3s ease;
-  scroll-margin-top: 80px;
+    flex-grow 0.55s cubic-bezier(0.2, 0.8, 0.2, 1).
+    filter 0.3s ease.
+    box-shadow 0.3s ease.
+  scroll-margin-top: 80px.
 }
 
 .franja:not(:first-child) {
-  margin-left: 0;
-  clip-path: none;
+  margin-left: 0.
+  clip-path: none.
 }
 
 .franja:nth-child(n) {
-  z-index: auto;
+  z-index: auto.
 }
 
 .franja::before {
-  display: none;
+  display: none.
 }
 
 .mosaico-taller:hover .franja {
-  flex-grow: 1;
+  flex-grow: 1.
 }
 
 .mosaico-taller:hover .franja:hover,
 .franja:focus {
-  z-index: 2;
-  flex-grow: 5;
-  filter: brightness(1.05);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+  z-index: 2.
+  flex-grow: 5.
+  filter: brightness(1.05).
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25).
 }
 
 .franja:focus-visible {
-  outline: 3px solid #fff;
-  outline-offset: 3px;
+  outline: 3px solid #fff.
+  outline-offset: 3px.
 }
 
 .franja-colapsada,
 .franja-expandida {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  overflow: hidden;
+  position: absolute.
+  inset: 0.
+  z-index: 1.
+  overflow: hidden.
 }
 
 .franja-colapsada {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 12px;
-  padding: 20px 8px 7%;
-  text-align: center;
-  opacity: 1;
-  transition: opacity 0.25s ease;
+  display: flex.
+  flex-direction: column.
+  align-items: center.
+  justify-content: flex-end.
+  gap: 12px.
+  padding: 20px 8px 7%.
+  text-align: center.
+  opacity: 1.
+  transition: opacity 0.25s ease.
 }
 
 .franja-imagen {
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  width: min(80%, 150px);
-  max-width: none;
-  aspect-ratio: 1.5;
-  transform: translate(-50%, -50%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  background: rgba(10, 12, 24, 0.2);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  position: absolute.
+  top: 43%.
+  left: 50%.
+  width: min(80%, 150px).
+  max-width: none.
+  aspect-ratio: 1.5.
+  transform: translate(-50%, -50%).
+  border: 1px solid rgba(255, 255, 255, 0.2).
+  border-radius: 10px.
+  background: rgba(10, 12, 24, 0.2).
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18).
 }
 
 .franja-imagen img {
-  border-radius: inherit;
-  object-fit: cover;
+  border-radius: inherit.
+  object-fit: cover.
 }
 
 .franja-nombre {
-  max-width: 100%;
-  font-size: clamp(0.95rem, 1.45vw, 1.25rem);
-  line-height: 1.2;
-  overflow-wrap: anywhere;
+  max-width: 100%.
+  font-size: clamp(0.95rem, 1.45vw, 1.25rem).
+  line-height: 1.2.
+  overflow-wrap: anywhere.
 }
 
 .franja-expandida {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  padding: clamp(16px, 3vw, 40px);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(8px);
+  display: flex.
+  flex-direction: column.
+  justify-content: center.
+  align-items: flex-start.
+  width: 100%.
+  padding: clamp(16px, 3vw, 40px).
+  opacity: 0.
+  pointer-events: none.
+  transform: translateY(8px).
   transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
+    opacity 0.25s ease.
+    transform 0.25s ease.
 }
 
 .mosaico-taller:hover .franja:hover .franja-colapsada,
 .franja:focus .franja-colapsada {
-  opacity: 0;
-  pointer-events: none;
+  opacity: 0.
+  pointer-events: none.
 }
 
 .mosaico-taller:hover .franja:hover .franja-expandida,
 .franja:focus .franja-expandida {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
+  opacity: 1.
+  pointer-events: auto.
+  transform: translateY(0).
 }
 
 .franja-fondo-marca {
-  z-index: 0;
-  opacity: 1;
+  z-index: 0.
+  opacity: 1.
 }
 
 .franja:hover .franja-fondo-marca {
-  opacity: 1;
+  opacity: 1.
 }
 
 .franja-expandida .marca {
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 0.7rem;
-  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.78).
+  font-size: 0.7rem.
+  letter-spacing: 0.16em.
 }
 
 .franja-expandida h3 {
-  margin: 5px 0 10px;
-  font-size: clamp(1.35rem, 2.6vw, 2rem);
-  line-height: 1.15;
-  white-space: normal;
+  margin: 5px 0 10px.
+  font-size: clamp(1.35rem, 2.6vw, 2rem).
+  line-height: 1.15.
+  white-space: normal.
 }
 
 .franja-control {
-  margin-bottom: 16px;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 0.92rem;
-  line-height: 1.55;
+  margin-bottom: 16px.
+  color: rgba(255, 255, 255, 0.86).
+  font-size: 0.92rem.
+  line-height: 1.55.
 }
 
 .franja-acciones {
-  margin-top: 8px;
+  margin-top: 8px.
 }
 
 .taller-btn {
-  display: inline-flex;
-  min-height: 44px;
-  align-items: center;
-  justify-content: center;
-  padding: 9px 15px;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: 9px;
-  background: rgba(9, 13, 24, 0.3);
-  color: #fff;
-  font-size: 0.88rem;
-  font-weight: 700;
-  text-decoration: none;
+  display: inline-flex.
+  min-height: 44px.
+  align-items: center.
+  justify-content: center.
+  padding: 9px 15px.
+  border: 1px solid rgba(255, 255, 255, 0.55).
+  border-radius: 9px.
+  background: rgba(9, 13, 24, 0.3).
+  color: #fff.
+  font-size: 0.88rem.
+  font-weight: 700.
+  text-decoration: none.
   transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease;
+    background-color 0.2s ease.
+    border-color 0.2s ease.
+    transform 0.2s ease.
 }
 
 .taller-btn::after {
-  content: "\2192";
-  margin-left: 9px;
-  font-size: 1.1rem;
-  transition: transform 0.2s ease;
+  content: "\2192".
+  margin-left: 9px.
+  font-size: 1.1rem.
+  transition: transform 0.2s ease.
 }
 
 .taller-btn:hover,
 .taller-btn:focus-visible {
-  transform: translateY(-1px);
-  border-color: var(--color-marca);
-  background: var(--color-marca);
-  color: #101524;
-  box-shadow: 0 0 18px var(--glow-marca);
+  transform: translateY(-1px).
+  border-color: var(--color-marca).
+  background: var(--color-marca).
+  color: #101524.
+  box-shadow: 0 0 18px var(--glow-marca).
 }
 
 .taller-btn:hover::after,
 .taller-btn:focus-visible::after {
-  transform: translateX(3px);
+  transform: translateX(3px).
 }
 
 .taller-btn:focus-visible,
 .nav-taller a:focus-visible {
-  outline: 3px solid #fff;
-  outline-offset: 3px;
+  outline: 3px solid #fff.
+  outline-offset: 3px.
 }
 
 @media (max-width: 920px) {
   .mosaico-taller {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    height: auto;
-    gap: 16px;
+    display: grid.
+    grid-template-columns: repeat(2, minmax(0, 1fr)).
+    height: auto.
+    gap: 16px.
   }
 
   .franja {
-    min-height: 390px;
-    flex: initial;
-    flex-direction: column;
-    align-items: stretch;
-    cursor: default;
+    min-height: 390px.
+    flex: initial.
+    flex-direction: column.
+    align-items: stretch.
+    cursor: default.
   }
 
   .mosaico-taller:hover .franja,
   .mosaico-taller:hover .franja:hover,
   .franja:focus {
-    flex: initial;
-    filter: none;
-    transform: none;
+    flex: initial.
+    filter: none.
+    transform: none.
   }
 
   .franja-colapsada,
   .franja-expandida {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    overflow: visible;
-    opacity: 1;
-    pointer-events: auto;
-    transform: none;
-    transition: none;
+    position: relative.
+    inset: auto.
+    width: 100%.
+    overflow: visible.
+    opacity: 1.
+    pointer-events: auto.
+    transform: none.
+    transition: none.
   }
 
   .franja-colapsada {
-    align-items: stretch;
-    justify-content: flex-start;
-    gap: 12px;
-    padding: 12px 12px 0;
-    text-align: left;
+    align-items: stretch.
+    justify-content: flex-start.
+    gap: 12px.
+    padding: 12px 12px 0.
+    text-align: left.
   }
 
   .franja-imagen {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    transform: none;
+    position: relative.
+    top: auto.
+    left: auto.
+    width: 100%.
+    transform: none.
   }
 
-  .franja-nombre {
-    font-size: 1.2rem;
-  }
+  .franja-nombre { font-size: 1.2rem; }
 
   .mosaico-taller:hover .franja:hover .franja-colapsada,
   .franja:focus .franja-colapsada {
-    opacity: 1;
+    opacity: 1.
   }
 
   .franja-expandida {
-    flex: 1;
-    padding: 8px 16px 16px;
+    flex: 1.
+    padding: 8px 16px 16px.
   }
 
   .mosaico-taller:hover .franja:hover .franja-expandida,
   .franja:focus .franja-expandida {
-    transform: none;
+    transform: none.
   }
 
-  .franja-expandida h3 {
-    font-size: 1.35rem;
-  }
+  .franja-expandida h3 { font-size: 1.35rem; }
 }
 
 @media (max-width: 560px) {
   .nav-taller {
-    justify-content: flex-start;
-    padding: 7px 10px;
+    justify-content: flex-start.
+    padding: 7px 10px.
   }
 
   .nav-taller a {
-    padding: 9px 10px;
-    font-size: 0.82rem;
+    padding: 9px 10px.
+    font-size: 0.82rem.
   }
 
   .pantalla-taller {
-    width: min(100% - 28px, 440px);
-    padding: 90px 0 42px;
+    width: min(100% - 28px, 440px).
+    padding: 90px 0 42px.
   }
 
   .portada {
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 20px.
+    text-align: left.
   }
 
-  .portada > p:last-child {
-    font-size: 0.92rem;
-  }
+  .portada > p:last-child { font-size: 0.92rem; }
 
   .mosaico-taller {
-    grid-template-columns: 1fr;
-    gap: 14px;
+    grid-template-columns: 1fr.
+    gap: 14px.
   }
 
   .franja {
-    min-height: 0;
-    border-radius: 13px;
+    min-height: 0.
+    border-radius: 13px.
   }
 }
 
 @media (min-width: 921px) and (hover: hover) {
   html body .mosaico-taller:hover > .franja {
-    flex-grow: 1;
+    flex-grow: 1.
   }
 
   html body .mosaico-taller:hover > .franja:hover,
   html body .mosaico-taller > .franja:focus {
-    z-index: 2;
-    flex-grow: 5;
+    z-index: 2.
+    flex-grow: 5.
   }
 
   html body .mosaico-taller:hover > .franja:hover > .franja-colapsada,
   html body .mosaico-taller > .franja:focus > .franja-colapsada {
-    opacity: 0;
-    pointer-events: none;
+    opacity: 0.
+    pointer-events: none.
   }
 
   html body .mosaico-taller:hover > .franja:hover > .franja-expandida,
   html body .mosaico-taller > .franja:focus > .franja-expandida {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
+    opacity: 1.
+    pointer-events: auto.
+    transform: translateY(0).
   }
 }
 
@@ -384,7 +378,7 @@
   *,
   *::before,
   *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important.
+    transition-duration: 0.01ms !important.
   }
 }

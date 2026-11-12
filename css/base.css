@@ -27,7 +27,6 @@ body {
   min-height: 100%;
 }
 
-/* Tipografía y colores comunes; cada página define su propia composición. */
 body {
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--fondo);
