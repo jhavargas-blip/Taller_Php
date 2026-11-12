@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/* Presentación común de las páginas de cada actividad. */
+>>>>>>> origin/main
 body.actividad-pagina {
   min-height: 100vh;
   height: auto;
@@ -81,7 +85,10 @@ body.actividad-pagina {
   background: rgba(255, 255, 255, 0.07);
   color: #fff;
   font: inherit;
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+>>>>>>> origin/main
 }
 
 .acronimo-formulario textarea {
@@ -326,4 +333,8 @@ body.actividad-pagina {
   .actividad-contenido {
     border-radius: 18px;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/* Contenedor principal que ocupa toda la ventana del navegador. */
+>>>>>>> origin/main
 .pantalla-taller {
   display: flex;
   align-items: stretch;
@@ -7,12 +11,20 @@
   overflow: hidden;
 }
 
+<<<<<<< HEAD
+=======
+/* Organiza las siete franjas en una fila horizontal. */
+>>>>>>> origin/main
 .mosaico-taller {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
+<<<<<<< HEAD
+=======
+/* Estilo y comportamiento común de cada panel del mosaico. */
+>>>>>>> origin/main
 .franja {
   position: relative;
   flex: 1;
@@ -31,11 +43,16 @@
   overflow: hidden;
 }
 
+<<<<<<< HEAD
+=======
+/* Solapamiento leve con borde recto para mantener separadas las franjas. */
+>>>>>>> origin/main
 .franja:not(:first-child) {
   margin-left: -8px;
   clip-path: polygon(8px 0, 100% 0, 100% 100%, 8px 100%);
 }
 
+<<<<<<< HEAD
 .franja:nth-child(1) { z-index: 7; }
 .franja:nth-child(2) { z-index: 6; }
 .franja:nth-child(3) { z-index: 5; }
@@ -44,11 +61,41 @@
 .franja:nth-child(6) { z-index: 2; }
 .franja:nth-child(7) { z-index: 1; }
 
+=======
+/* Orden de superposición: la primera franja queda por encima de las siguientes. */
+.franja:nth-child(1) {
+  z-index: 7;
+}
+.franja:nth-child(2) {
+  z-index: 6;
+}
+.franja:nth-child(3) {
+  z-index: 5;
+}
+.franja:nth-child(4) {
+  z-index: 4;
+}
+.franja:nth-child(5) {
+  z-index: 3;
+}
+.franja:nth-child(6) {
+  z-index: 2;
+}
+.franja:nth-child(7) {
+  z-index: 1;
+}
+
+/* Ilumina y trae al frente el panel señalado por el cursor. */
+>>>>>>> origin/main
 .franja:hover {
   filter: brightness(1.08);
   z-index: 10;
 }
 
+<<<<<<< HEAD
+=======
+/* Sombra lateral decorativa para reforzar la profundidad entre las franjas. */
+>>>>>>> origin/main
 .franja:not(:first-child)::before {
   content: "";
   position: absolute;
@@ -66,6 +113,7 @@
   );
 }
 
+<<<<<<< HEAD
 .franja-acronimo {
   --borde-marca: #24a866;
   --glow-marca: rgba(89, 255, 166, 0.4);
@@ -108,6 +156,52 @@
   --color-marca: #ffdb58;
 }
 
+=======
+/* Colores de borde y brillo asignados a cada una de las siete franjas. */
+.franja-acronimo {
+  --borde-marca: #2f7d3f;
+  --glow-marca: rgba(143, 212, 0, 0.55);
+  --color-marca: #9bf00b;
+}
+
+.franja-fibonacci {
+  --borde-marca: #1d4fb0;
+  --glow-marca: rgba(70, 140, 255, 0.55);
+  --color-marca: #4d95ff;
+}
+
+.franja-estadistica {
+  --borde-marca: #b5232f;
+  --glow-marca: rgba(230, 57, 70, 0.55);
+  --color-marca: #ff4655;
+}
+
+.franja-conjuntos {
+  --borde-marca: #2a72a8;
+  --glow-marca: rgba(74, 159, 216, 0.55);
+  --color-marca: #4fc3f7;
+}
+
+.franja-binario {
+  --borde-marca: #c76711;
+  --glow-marca: rgba(255, 138, 0, 0.55);
+  --color-marca: #ff9f43;
+}
+
+.franja-arbol {
+  --borde-marca: #3c67af;
+  --glow-marca: rgba(96, 201, 255, 0.55);
+  --color-marca: #63d9ff;
+}
+
+.franja-calculadora {
+  --borde-marca: #a35b12;
+  --glow-marca: rgba(255, 204, 102, 0.55);
+  --color-marca: #ffc857;
+}
+
+/* Al pasar sobre el mosaico, todas las franjas vuelven a su tamaño base. */
+>>>>>>> origin/main
 .mosaico-taller:hover .franja {
   flex-grow: 1;
 }
@@ -116,6 +210,10 @@
   flex-grow: 6;
 }
 
+<<<<<<< HEAD
+=======
+/* Contenido visible cuando una franja está contraída. */
+>>>>>>> origin/main
 .franja-colapsada {
   position: absolute;
   inset: 0;
@@ -131,6 +229,10 @@
   transition: opacity 0.35s ease;
 }
 
+<<<<<<< HEAD
+=======
+/* Espacio central para colocar una imagen o logo en cada franja. */
+>>>>>>> origin/main
 .franja-imagen {
   position: absolute;
   top: 44%;
@@ -152,6 +254,10 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+/* Las imágenes añadidas al espacio se adaptan sin deformarse. */
+>>>>>>> origin/main
 .franja-imagen img {
   display: block;
   width: 100%;
@@ -159,6 +265,10 @@
   object-fit: contain;
 }
 
+<<<<<<< HEAD
+=======
+/* Oculta el título compacto al expandir el panel con el cursor. */
+>>>>>>> origin/main
 .franja:hover .franja-colapsada {
   opacity: 0;
   pointer-events: none;
@@ -171,6 +281,10 @@
   letter-spacing: 0.5px;
 }
 
+<<<<<<< HEAD
+=======
+/* Contenido detallado que aparece dentro del panel al pasar el cursor. */
+>>>>>>> origin/main
 .franja-expandida {
   position: absolute;
   inset: 0;
@@ -189,11 +303,19 @@
     transform 0.4s ease 0.15s;
 }
 
+<<<<<<< HEAD
+=======
+/* Muestra el contenido detallado con una transición suave. */
+>>>>>>> origin/main
 .franja:hover .franja-expandida {
   opacity: 1;
   transform: translateY(0);
 }
 
+<<<<<<< HEAD
+=======
+/* Fondo decorativo de cada panel, independiente del contenido. */
+>>>>>>> origin/main
 .franja-fondo-marca {
   position: absolute;
   inset: 0;
@@ -215,76 +337,132 @@
   transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
+=======
+/* Gradientes de fondo individuales para diferenciar visualmente los paneles. */
+>>>>>>> origin/main
 .franja-acronimo .franja-fondo-marca {
   background:
     radial-gradient(
       circle at 50% 42%,
+<<<<<<< HEAD
       rgba(87, 245, 161, 0.2) 0%,
       transparent 58%
     ),
     linear-gradient(115deg, #123d30 0%, #195b40 48%, #267451 100%);
+=======
+      rgba(255, 255, 255, 0.22) 0%,
+      transparent 58%
+    ),
+    linear-gradient(115deg, #145c22 0%, #1f8a34 45%, #34b94b 100%);
+>>>>>>> origin/main
 }
 
 .franja-fibonacci .franja-fondo-marca {
   background:
     radial-gradient(
       circle at 50% 42%,
+<<<<<<< HEAD
       rgba(113, 176, 255, 0.2) 0%,
       transparent 58%
     ),
     linear-gradient(115deg, #172e51 0%, #234776 48%, #35669d 100%);
+=======
+      rgba(255, 255, 255, 0.22) 0%,
+      transparent 58%
+    ),
+    linear-gradient(115deg, #0d3489 0%, #1959d6 45%, #3b84f5 100%);
+>>>>>>> origin/main
 }
 
 .franja-estadistica .franja-fondo-marca {
   background:
     radial-gradient(
       circle at 50% 42%,
+<<<<<<< HEAD
       rgba(255, 113, 136, 0.2) 0%,
       transparent 58%
     ),
     linear-gradient(115deg, #492a38 0%, #743949 48%, #984c5b 100%);
+=======
+      rgba(255, 255, 255, 0.22) 0%,
+      transparent 58%
+    ),
+    linear-gradient(115deg, #8a1a24 0%, #d92e3a 45%, #f0525d 100%);
+>>>>>>> origin/main
 }
 
 .franja-conjuntos .franja-fondo-marca {
   background:
     radial-gradient(
       circle at 50% 42%,
+<<<<<<< HEAD
       rgba(85, 228, 245, 0.2) 0%,
       transparent 58%
     ),
     linear-gradient(115deg, #153e4b 0%, #1c6271 48%, #287d8a 100%);
+=======
+      rgba(255, 255, 255, 0.22) 0%,
+      transparent 58%
+    ),
+    linear-gradient(115deg, #124467 0%, #1f74b8 45%, #3f9ddb 100%);
+>>>>>>> origin/main
 }
 
 .franja-binario .franja-fondo-marca {
   background:
     radial-gradient(
       circle at 50% 42%,
+<<<<<<< HEAD
       rgba(255, 173, 77, 0.2) 0%,
       transparent 58%
     ),
     linear-gradient(115deg, #49301f 0%, #76502c 48%, #a56b37 100%);
+=======
+      rgba(255, 255, 255, 0.22) 0%,
+      transparent 58%
+    ),
+    linear-gradient(115deg, #451403 0%, #b54b0d 45%, #ff9f43 100%);
+>>>>>>> origin/main
 }
 
 .franja-arbol .franja-fondo-marca {
   background:
     radial-gradient(
       circle at 50% 42%,
+<<<<<<< HEAD
       rgba(146, 158, 255, 0.2) 0%,
       transparent 58%
     ),
     linear-gradient(115deg, #292f58 0%, #3b477d 48%, #53619f 100%);
+=======
+      rgba(255, 255, 255, 0.22) 0%,
+      transparent 58%
+    ),
+    linear-gradient(115deg, #071932 0%, #123d6e 45%, #51b7ff 100%);
+>>>>>>> origin/main
 }
 
 .franja-calculadora .franja-fondo-marca {
   background:
     radial-gradient(
       circle at 50% 42%,
+<<<<<<< HEAD
       rgba(255, 219, 88, 0.2) 0%,
       transparent 58%
     ),
     linear-gradient(115deg, #443a1d 0%, #75602a 48%, #a18436 100%);
 }
 
+=======
+      rgba(255, 255, 255, 0.22) 0%,
+      transparent 58%
+    ),
+    linear-gradient(115deg, #3b1b00 0%, #8d4b08 45%, #ffc857 100%);
+}
+
+/* Presentación del rótulo pequeño y del texto descriptivo del panel. */
+>>>>>>> origin/main
 .franja-expandida .marca {
   font-size: 0.7rem;
   font-weight: 700;
@@ -303,9 +481,16 @@
 .franja-control {
   font-size: 0.88rem;
   color: rgba(255, 255, 255, 0.8);
+<<<<<<< HEAD
   margin-bottom: 8px.
 }
 
+=======
+  margin-bottom: 8px;
+}
+
+/* Enlace de acción de cada actividad, con acento tomado del panel. */
+>>>>>>> origin/main
 .franja-acciones {
   margin-top: 20px;
 }
@@ -329,28 +514,47 @@
     background-color 0.2s ease,
     border-color 0.2s ease,
     box-shadow 0.2s ease,
+<<<<<<< HEAD
     transform 0.2s ease.
+=======
+    transform 0.2s ease;
+>>>>>>> origin/main
 }
 
 .taller-btn::after {
   content: "→";
+<<<<<<< HEAD
   margin-left: 10px.
   font-size: 1.1rem.
   transition: transform 0.2s ease.
+=======
+  margin-left: 10px;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+>>>>>>> origin/main
 }
 
 .taller-btn:hover,
 .taller-btn:focus-visible {
   background: var(--color-marca, rgba(255, 255, 255, 0.2));
+<<<<<<< HEAD
   border-color: var(--color-marca, #fff).
   box-shadow:
     0 8px 22px rgba(5, 16, 28, 0.24).
     0 0 18px var(--glow-marca, transparent).
   transform: translateY(-2px).
+=======
+  border-color: #09ff00;
+  box-shadow:
+    0 8px 22px rgba(208, 1, 255, 0.3),
+    0 0 18px var(--glow-marca, transparent);
+  transform: translateY(-2px);
+>>>>>>> origin/main
 }
 
 .taller-btn:hover::after,
 .taller-btn:focus-visible::after {
+<<<<<<< HEAD
   transform: translateX(3px).
 }
 
@@ -424,10 +628,104 @@
   text-shadow:
     0 0 10px var(--neon).
     0 0 26px var(--neon).
+=======
+  transform: translateX(3px);
+}
+
+.taller-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Color de respaldo de las franjas, visible mientras cargan los gradientes. */
+.franja-acronimo {
+  background-color: #0c3315;
+}
+.franja-fibonacci {
+  background-color: #0a1c44;
+}
+.franja-estadistica {
+  background-color: #4a1018;
+}
+.franja-conjuntos {
+  background-color: #0d2c42;
+}
+.franja-binario {
+  background-color: #4a1b0c;
+}
+.franja-arbol {
+  background-color: #0d2d4f;
+}
+.franja-calculadora {
+  background-color: #3d2408;
+}
+
+/* Barra fija superior con enlaces a cada una de las siete secciones. */
+.nav-taller {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  background: rgba(8, 10, 20, 0.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Apariencia y distribución de los enlaces del menú superior. */
+.nav-taller a {
+  position: relative;
+  flex: 1;
+  padding: 16px 10px;
+  font-family: "Rajdhani", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    text-shadow 0.3s ease;
+}
+/* Línea de color que se anima debajo del enlace activo por hover o teclado. */
+.nav-taller a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 72%;
+  height: 3px;
+  background: var(--neon);
+  border-radius: 3px 3px 0 0;
+  transform: translateX(-50%) scaleX(0);
+  opacity: 0;
+  box-shadow:
+    0 0 8px var(--neon),
+    0 0 18px var(--neon);
+  transition:
+    transform 0.3s ease,
+    opacity 0.25s ease;
+}
+
+/* Cambio de color y brillo al interactuar con los enlaces de navegación. */
+.nav-taller a:hover,
+.nav-taller a:focus-visible {
+  color: #ffffff;
+  background: linear-gradient(180deg, transparent 30%, var(--neon-suave) 100%);
+  text-shadow:
+    0 0 10px var(--neon),
+    0 0 26px var(--neon);
+>>>>>>> origin/main
 }
 
 .nav-taller a:hover::after,
 .nav-taller a:focus-visible::after {
+<<<<<<< HEAD
   transform: translateX(-50%) scaleX(1).
   opacity: 1.
 }
@@ -459,4 +757,38 @@
 .nav-calculadora {
   --neon: #ffdb58.
   --neon-suave: rgba(255, 219, 88, 0.18).
+=======
+  transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+}
+
+/* Color de la línea y del resplandor para cada enlace del menú. */
+.nav-acronimo {
+  --neon: #9bf00b;
+  --neon-suave: rgba(155, 240, 11, 0.2);
+}
+.nav-fibonacci {
+  --neon: #4d95ff;
+  --neon-suave: rgba(77, 149, 255, 0.2);
+}
+.nav-estadistica {
+  --neon: #ff4655;
+  --neon-suave: rgba(255, 70, 85, 0.2);
+}
+.nav-conjuntos {
+  --neon: #4fc3f7;
+  --neon-suave: rgba(79, 195, 247, 0.2);
+}
+.nav-binario {
+  --neon: #ff9f43;
+  --neon-suave: rgba(255, 159, 67, 0.2);
+}
+.nav-arbol {
+  --neon: #63d9ff;
+  --neon-suave: rgba(99, 217, 255, 0.2);
+}
+.nav-calculadora {
+  --neon: #ffc857;
+  --neon-suave: rgba(255, 200, 87, 0.2);
+>>>>>>> origin/main
 }
