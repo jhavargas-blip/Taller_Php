@@ -41,27 +41,13 @@
 }
 
 /* Orden de superposición: la primera franja queda por encima de las siguientes. */
-.franja:nth-child(1) {
-  z-index: 7;
-}
-.franja:nth-child(2) {
-  z-index: 6;
-}
-.franja:nth-child(3) {
-  z-index: 5;
-}
-.franja:nth-child(4) {
-  z-index: 4;
-}
-.franja:nth-child(5) {
-  z-index: 3;
-}
-.franja:nth-child(6) {
-  z-index: 2;
-}
-.franja:nth-child(7) {
-  z-index: 1;
-}
+.franja:nth-child(1) { z-index: 7; }
+.franja:nth-child(2) { z-index: 6; }
+.franja:nth-child(3) { z-index: 5; }
+.franja:nth-child(4) { z-index: 4; }
+.franja:nth-child(5) { z-index: 3; }
+.franja:nth-child(6) { z-index: 2; }
+.franja:nth-child(7) { z-index: 1; }
 
 /* Ilumina y trae al frente el panel señalado por el cursor. */
 .franja:hover {
@@ -393,27 +379,17 @@
 }
 
 /* Color de respaldo de las franjas, visible mientras cargan los gradientes. */
-.franja-acronimo {
-  background-color: #123d30;
-}
-.franja-fibonacci {
-  background-color: #172e51;
-}
-.franja-estadistica {
-  background-color: #492a38;
-}
-.franja-conjuntos {
-  background-color: #153e4b;
-}
-.franja-binario {
-  background-color: #49301f;
-}
-.franja-arbol {
-  background-color: #292f58;
-}
-.franja-calculadora {
-  background-color: #443a1d;
-}
+.franja-acronimo { background-color: #123d30; }
+.franja-fibonacci { background-color: #172e51; }
+.franja-estadistica { background-color: #492a38; }
+.franja-conjuntos { background-color: #153e4b; }
+.franja-binario { background-color: #49301f; }
+.franja-arbol { background-color: #292f58; }
+.franja-calculadora { background-color: #443a1d; }
+
+/* ============================================================
+   NAVBAR - Versión con efectos NEON (la original bonita)
+   ============================================================ */
 
 /* Barra fija superior con enlaces a cada una de las siete secciones. */
 .nav-taller {
@@ -447,6 +423,7 @@
     background 0.3s ease,
     text-shadow 0.3s ease;
 }
+
 /* Línea de color que se anima debajo del enlace activo por hover o teclado. */
 .nav-taller a::after {
   content: "";
