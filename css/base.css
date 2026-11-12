@@ -27,10 +27,6 @@ body {
   min-height: 100%;
 }
 
-<<<<<<< HEAD
-=======
-/* Tipografía y colores comunes; cada página define su propia composición. */
->>>>>>> origin/main
 body {
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--fondo);
@@ -64,8 +60,4 @@ h3 {
 :focus-visible {
   outline: 3px solid var(--acento-claro);
   outline-offset: 3px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/main

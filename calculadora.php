@@ -133,8 +133,4 @@ $historial = $_SESSION['historial_calculadora'];
         <a class="actividad-volver" href="index.html#calculadora">Volver al menú</a>
     </main>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> origin/main
