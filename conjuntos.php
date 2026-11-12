@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ?>
         </section>
 
-        <a class="actividad-volver" href="index.html#conjuntos">Volver al menú</a>
+        <a class="actividad-volver" href="index.html">Volver al menú</a>
     </main>
 </body>
 

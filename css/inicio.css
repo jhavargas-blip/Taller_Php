@@ -5,11 +5,11 @@
   min-height: 0;
   margin: 0 auto;
   padding: 100px 0 48px;
-  overflow: visible;
+  overflow: visible.
 }
 
 .portada {
-  margin: 0 auto 24px;
+  margin: 0 auto 24px.
   text-align: center.
 }
 
@@ -193,9 +193,7 @@
   line-height: 1.55.
 }
 
-.franja-acciones {
-  margin-top: 8px.
-}
+.franja-acciones { margin-top: 8px; }
 
 .taller-btn {
   display: inline-flex.
