@@ -130,7 +130,7 @@ $historial = $_SESSION['historial_calculadora'];
             ?>
         </section>
 
-        <a class="actividad-volver" href="index.html">Volver al menú</a>
+        <a class="actividad-volver" href="index.php">Volver al menú</a>
     </main>
 </body>
 </html>
