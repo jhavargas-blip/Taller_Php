@@ -1,4 +1,143 @@
-<?php
-// Redirige a index.html para que Apache sirva el archivo correcto
-header('Location: index.html');
-exit;
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller PHP</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/consolas.css?v=4" />
+    <link rel="stylesheet" href="css/inicio.css?v=4" />
+  </head>
+  <body>
+    <nav class="nav-taller" aria-label="Navegación de actividades">
+      <a href="#acronimo" class="nav-acronimo">Acrónimo</a>
+      <a href="#fibonacci" class="nav-fibonacci">Fibonacci</a>
+      <a href="#estadistica" class="nav-estadistica">Estadística</a>
+      <a href="#conjuntos" class="nav-conjuntos">Conjuntos</a>
+      <a href="#binario" class="nav-binario">Binario</a>
+      <a href="#arbol" class="nav-arbol">Árbol</a>
+      <a href="#calculadora" class="nav-calculadora">Calculadora</a>
+    </nav>
+
+    <main class="pantalla-taller">
+      <header class="portada">
+        <H1 class="portada-etiqueta">Taller php</H1>
+        <p>Elige un ejercicio de lógica, matemáticas o programación para comenzar.</p>
+      </header>
+
+      <section class="mosaico-taller" aria-label="Actividades disponibles">
+        <article class="franja franja-acronimo" id="acronimo" tabindex="0">
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen">
+              <img src="resources/acronimo.jpg" alt="Acrónimo" />
+            </div>
+            <h2 class="franja-nombre">Acrónimo</h2>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Texto</span>
+            <h3>Acrónimo</h3>
+            <p class="franja-control">Frase: <strong>Portable Network Graphics</strong></p>
+            <a href="acronimo.php" class="taller-btn">Abrir actividad</a>
+          </div>
+        </article>
+
+        <article class="franja franja-fibonacci" id="fibonacci" tabindex="0">
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen">
+              <img src="resources/fibonacci.jpg" alt="Fibonacci" />
+            </div>
+            <h2 class="franja-nombre">Fibonacci</h2>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Sucesión</span>
+            <h3>Fibonacci / Factorial</h3>
+            <p class="franja-control">Operación: <strong>Fibonacci o factorial</strong></p>
+            <a href="fibonacci.php" class="taller-btn">Abrir actividad</a>
+          </div>
+        </article>
+
+        <article class="franja franja-estadistica" id="estadistica" tabindex="0">
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen">
+              <img src="resources/estadistica.jpg" alt="Estadística" />
+            </div>
+            <h2 class="franja-nombre">Estadística</h2>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Datos</span>
+            <h3>Promedio · Media · Moda</h3>
+            <p class="franja-control">Serie: <strong>2, 4, 4, 7, 9</strong></p>
+            <a href="estadistica.php" class="taller-btn">Abrir actividad</a>
+          </div>
+        </article>
+
+        <article class="franja franja-conjuntos" id="conjuntos" tabindex="0">
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen">
+              <img src="resources/conjuntos.jpg" alt="Conjuntos" />
+            </div>
+            <h2 class="franja-nombre">Conjuntos</h2>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Matemáticas</span>
+            <h3>Unión · Intersección</h3>
+            <p class="franja-control">A: <strong>1, 2, 3, 4</strong> · B: <strong>3, 4, 5, 6</strong></p>
+            <a href="conjuntos.php" class="taller-btn">Abrir actividad</a>
+          </div>
+        </article>
+
+        <article class="franja franja-binario" id="binario" tabindex="0">
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen">
+              <img src="resources/binario.jpg" alt="Binario" />
+            </div>
+            <h2 class="franja-nombre">Binario</h2>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Conversión</span>
+            <h3>Decimal a Binario</h3>
+            <p class="franja-control">Número: <strong>25</strong></p>
+            <a href="binario.php" class="taller-btn">Abrir actividad</a>
+          </div>
+        </article>
+
+        <article class="franja franja-arbol" id="arbol" tabindex="0">
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen">
+              <img src="resources/arbol.jpg" alt="Árbol" />
+            </div>
+            <h2 class="franja-nombre">Árbol</h2>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Estructuras</span>
+            <h3>Árbol Binario</h3>
+            <p class="franja-control">Recorridos: <strong>Preorden e Inorden</strong></p>
+            <a href="arbol.php" class="taller-btn">Abrir actividad</a>
+          </div>
+        </article>
+
+        <article class="franja franja-calculadora" id="calculadora" tabindex="0">
+          <div class="franja-fondo-marca"></div>
+          <div class="franja-colapsada">
+            <div class="franja-imagen">
+              <img src="resources/calculadora.jpg" alt="Calculadora" />
+            </div>
+            <h2 class="franja-nombre">Calculadora</h2>
+          </div>
+          <div class="franja-expandida">
+            <span class="marca">Operaciones</span>
+            <h3>Calculadora</h3>
+            <p class="franja-control">Operaciones: <strong>Suma, resta, división, porcentaje</strong></p>
+            <a href="calculadora.php" class="taller-btn">Abrir actividad</a>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
